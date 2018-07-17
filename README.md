@@ -11,4 +11,5 @@ Here we have some set of **Useful PHP Snippets**, which are useful for PHP Devel
 - [Multi language Seconds to String](seconds-to-string.php)
 - [Check Iranian National ID Number](check-iranian-national-ID.php)
 - [Add Ordinal Suffix to Number ( th, st, nd or rd )](ordinal-suffix.php)
-- [Convert Farsi and Arabic Characters](convert-characters.php)
+- [Convert Farsi ( Persian ) and Arabic Characters](convert-characters.php)
+- [Convert Farsi ( Persian ), English and Arabic Numbers](convert-numbers.php)
