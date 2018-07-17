@@ -1,27 +1,23 @@
 <?php
 
-/* Human Readable Random String
- * This code will create a human readable string that will look more close to dictionary words, useful for captchas.
- */
+// Generate a Random String
 
-function readable_random_string( $length = 6 ) {
+function random_string( $length = 6 ) {
 
-    $conso	= array( "b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "r", "s", "t", "v", "w", "x", "y", "z" );
+    $conso	= "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     $vowels	= array( "a", "e", "i", "o", "u" );
     $string	= "";
 	
     srand( (double)microtime()*1000000 );
-    $max	= $length / 2;
 	
-    for ( $i = 1; $i <= $max; $i++ ) {
-		$string	.=$conso[rand(0,19)];
-		$string	.=$vowels[rand(0,4)];
+    for ( $i = 1; $i <= $length; $i++ ) {
+		$string	.=$conso[rand()%strlen( $conso )];
     }
 	
     return $string;
 	
 }
 
-echo readable_random_string( 10 );
+echo random_string( 10 );
 
 ?>
