@@ -55,4 +55,13 @@ function seconds_to_string( $secs = 0, $lang = 'english' ) {
 
 echo seconds_to_string( 12345 ) . "<br/>" . seconds_to_string( 12345, 'persian' );
 
+/*
+
+ OUTPUT:
+ 
+ 3 hours, 25 minutes, 45 seconds
+ 3 ساعت و 25 دقیقه و 45 ثانیه
+ 
+ */
+
 ?>
